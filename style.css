@@ -136,7 +136,7 @@ button:disabled {
 
 #IoTGatewayDIV:not(.connected),
 #normalAPI_DIV:not(.connected) {
-    filter: grayscale(100%) blur(5px);
+    filter: grayscale(100%) ;
     pointer-events: none
 }
 
@@ -260,8 +260,7 @@ body {
 
 #IoTGatewayDIV.error,
 #normalAPI_DIV.error {
-    filter: blur(5px);
-    pointer-events: none;
+     pointer-events: none;
     position: relative
 }
 
@@ -438,7 +437,8 @@ button {
     overflow-y: auto;
     font-size: 16px;
     max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
+    background-color: #e2eaff;
 }
 
 #read_tags_and_values span {
@@ -714,4 +714,8 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
+}
+
+#shown{
+    display: none;
 }

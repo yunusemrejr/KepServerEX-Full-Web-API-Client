@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-
-</head>
+ </head>
 
 <body>
     <div id="bodyContainer">
@@ -51,13 +49,14 @@
                     <input type="text" id="normal-api_pss" placeholder="Enter Password">
                 </div>
                 <button id="checkbtn" onclick="checkConnection()">Check Connection & Connect</button>
-                <div class="status">
-                    <p>IoT Gateway Status: <span id="iot-gateway-status">Disconnected</span></p>
-                    <p>Normal API Status: <span id="normal-api-status">Disconnected</span></p>
-                </div>
+               
+           
             </div>
 
             <div id="IoTGatewayDIV">
+                <div class="status">
+                    <p>IoT Gateway Status: <span id="iot-gateway-status">Disconnected</span></p>
+                 </div>
                 <label>IoT Gateway Read Tags & Values:</label>
                 <a id="hidemassvalues">Hide</a>
                 <div id="read_tags_and_values">Tag name: value <br>Tag name: value<br>
@@ -73,6 +72,9 @@
             </div>
 
             <div id="normalAPI_DIV">
+                <div class="status">
+                    <p>Normal API Status: <span id="normal-api-status">Disconnected</span></p>
+               </div>
                 <label>Standard API Access:</label>
                 <div id="project_data">Project ID: <br> Number of Channels: <br>
 
@@ -101,13 +103,8 @@
                 <div id="selected_device_info">Device Name: <br> Parent Channel: <br>No. of Tags in Device: <br>Device Unique ID: <br></div>
 
 
-                <label>Create new Tag:</label>
-                <input id="tagNameINPUT" placeholder="unique tag name">
-                <input id="tagDataTypeINPUT" placeholder="tag data type">
-                <input id="tagScanRateINPUT" placeholder="tag scan rate">
-                <input id="tagAddressINPUT" placeholder="tag address">
 
-                <button onclick="createNewTag(selectedTypeNameDVC, username, password,projectId)">Create Tag</button>
+
                 <label>Select existing Tag:</label>
                 <select id="dropdown_of_tags_for_standard_API">
             <option value="option1">tag name</option>
@@ -117,6 +114,20 @@
 
                 <div id="selected_tag_info">Tag Name: <br> Parent Channel: <br> Parent Device: <br> Scan rate: <br> Address: <br> Data Type: <br>
                 </div>
+
+
+                <div id="create-new-tag">
+                    <label>Create new Tag: <a style="color:rgb(0, 255, 195)"  onclick="showcreatenewtag()">[<span class="fas fa-plus"></span>]</a></label>
+                    <span id="shown"><input id="tagNameINPUT" placeholder="unique tag name">
+                    <input id="tagDataTypeINPUT" placeholder="tag data type">
+                    <input id="tagScanRateINPUT" placeholder="tag scan rate">
+                    <input id="tagAddressINPUT" placeholder="tag address">
+    
+                    <button onclick="createNewTag(selectedTypeNameDVC, username, password,projectId)">Create Tag</button>
+                </span>
+                </div>
+
+                
                 <button onclick="updateTag(selectedTypeNameDVC, username, password)">Change Tag Details</button>
                 <button style="background-color:#7024247d;" onclick="deleteselectedtag(selectedTypeNameTAG, username, password)">Delete Tag</button>
                 <label for="chkbx" style="font-size:small">I agree deleting the selected tag from my KepServerEX Project. <input name="chkbx" id="chkbx" type="checkbox"></label>
