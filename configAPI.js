@@ -393,3 +393,17 @@ function deleteselectedtag(selectedTypeNameTAG, username, password) {
 
     document.getElementById("chkbx").checked = false;
 }
+
+ 
+const showcreatenewtag=()=>{
+    document.getElementById('shown').style.display='block';
+}
+
+
+ 
+const demo =`172.16.4.250:39320 | 172.16.4.250:57412`;
+     
+  
+ 
+  
+ 
