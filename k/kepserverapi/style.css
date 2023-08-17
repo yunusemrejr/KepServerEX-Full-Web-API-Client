@@ -1,0 +1,740 @@
+@import url('https://fonts.google.com/specimen/Amiko?query=Amiko#standard-styles');
+#info-button,
+#info-modal-content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2)
+}
+
+.logo,
+nav {
+    height: 70px
+}
+
+#info-modal,
+#info-wrapper,
+.navbar {
+    position: fixed;
+    top: 0
+}
+
+#normalAPI_DIV #project_data button[type=submit],
+#read_tags_and_values {
+    margin-bottom: 20px;
+    margin-top: 10px
+}
+
+#info-modal,
+#read_tags_and_values br,
+#unsupported {
+    display: none
+}
+
+#footercredit,
+h1 {
+    text-align: center
+}
+
+.status {
+    padding: 10px;
+    background-color: #f2f2f2
+}
+
+#normalAPI_DIV button,
+.success,
+button {
+    background-color: #4caf50;
+    color: #fff
+}
+
+#info-button,
+#info-modal-content,
+nav {
+    background-color: #fff
+}
+
+#bodyContainer {
+    font-family: Arial, sans-serif;
+    margin: 5vw 7vw;
+}
+
+h1 {
+    margin: 0
+}
+
+button,
+input[type=text],
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%
+}
+
+#normalAPI_DIV label,
+label {
+    font-size: 20px;
+    font-weight: 700
+}
+
+label {
+    margin: 20px 0 10px
+}
+
+.status,
+button {
+    font-size: 16px
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%
+}
+
+label {
+    color: white;
+}
+
+.status {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+
+#info-button:hover,
+body {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(247deg, rgba(0, 0, 0, 1) 0%, rgba(47, 119, 134, 1) 96%);
+    background: -webkit-linear-gradient(247deg, rgba(0, 0, 0, 1) 0%, rgba(47, 119, 134, 1) 96%);
+    background: linear-gradient(247deg, rgba(0, 0, 0, 1) 0%, rgba(47, 119, 134, 1) 96%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#2f7786", GradientType=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+#hidemassvalues,
+.error {
+    background-color: #f44336
+}
+
+.error {
+    color: #fff
+}
+
+button:disabled {
+    background-color: gray;
+    opacity: .7;
+    cursor: not-allowed
+}
+
+#parent {
+    display: flex;
+    justify-content: space-between
+}
+
+#IoTGatewayDIV:not(.connected),
+#normalAPI_DIV:not(.connected) {
+    filter: grayscale(100%) blur(5px);
+    pointer-events: none
+}
+
+#IoTGatewayDIV {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px
+}
+
+#normalAPI_DIV {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 800px
+}
+
+#IoTGatewayDIV #dropdown_of_channels_for_IoT_Gateway_API,
+#IoTGatewayDIV #dropdown_of_devices_for_IoT_Gateway_API,
+#IoTGatewayDIV #dropdown_of_tags_for_IoT_Gateway_API,
+#footercredit,
+#normalAPI_DIV #dropdown_of_channels_for_standard_API,
+#normalAPI_DIV #dropdown_of_devices_for_standard_API,
+#normalAPI_DIV #dropdown_of_tags_for_standard_API,
+.navbar {
+    width: 100%
+}
+
+#normalAPI_DIV button {
+    padding: 10px;
+    font-size: 16px
+}
+
+@media screen and (max-width:768px) {
+    #parent {
+        flex-direction: column
+    }
+    #IoTGatewayDIV,
+    #normalAPI_DIV {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%
+    }
+    #IoTGatewayDIV select,
+    #normalAPI_DIV select {
+        width: 100%
+    }
+}
+
+body {
+    min-height: calc(100vh - 50px);
+    position: relative
+}
+
+#footercredit {
+    bottom: 0;
+    margin-top: 5em;
+    color: white;
+    padding-top: 2em;
+}
+
+#favemerg {
+    width: 50px
+}
+
+#continueButton {
+    background-color: #2684c4
+}
+
+@media only screen and (max-width:1100px) {
+    body :not(#unsupported):not(#favemerg):not(#continueButton):not(#notrecomspantxt) {
+        visibility: hidden;
+    }
+    html {
+        background: #020024;
+        background: linear-gradient(291deg, #020024 0, #00beff 35%, #00d4ff 100%)
+    }
+    #unsupported {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        visibility: visible
+    }
+}
+
+#logoDIV {
+    font-family: 'Amiko', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    text-shadow: 0 0 2px #22b65d, 0 0 1px #22b65d, 0 0 5px #22b65d, 0 0 4px #22b65d, 0 0 7px #00bfff93, 0 0 6px #00bfff93;
+    color: #fff;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-top: 1em;
+}
+
+#secondpart {
+    text-shadow: 0 0 2px #00bfff93, 0 0 1px #22b65d, 0 0 5px #00bfff93, 0 0 4px #2238b6, 0 0 7px #00bfff93, 0 0 6px #00bfff93;
+}
+
+.logo-text {
+    display: inline-block
+}
+
+.logo-text span:first-child,
+.nav-menu a:hover {
+    color: #2684c4
+}
+
+.logo-text span:last-child {
+    color: #55bb5a
+}
+
+#IoTGatewayDIV.error,
+#normalAPI_DIV.error {
+    filter: blur(5px);
+    pointer-events: none;
+    position: relative
+}
+
+#IoTGatewayDIV.error::before,
+#normalAPI_DIV.error::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, .5);
+    z-index: 1
+}
+
+#IoTGatewayDIV.connected,
+#normalAPI_DIV.connected {
+    filter: none;
+    pointer-events: auto
+}
+
+button:focus,
+input[type=text]:focus,
+select:focus {
+    outline: 0
+}
+
+button:hover {
+    background-color: #6d6d6d
+}
+
+button:hover,
+input[type=text]:hover,
+select:hover {
+    border: 1px solid #555
+}
+
+#normalAPI_DIV #project_data input[type=text] {
+    width: 50%;
+    margin-right: 10px
+}
+
+#IoTGatewayDIV #selected_channel_info,
+#IoTGatewayDIV #selected_device_info,
+#IoTGatewayDIV #selected_tag_info,
+#normalAPI_DIV #selected_channel_info,
+#normalAPI_DIV #selected_device_info,
+#normalAPI_DIV #selected_tag_info {
+    margin-top: 10px
+}
+
+#IoTGatewayDIV #selected_channel_info button,
+#IoTGatewayDIV #selected_device_info button,
+#IoTGatewayDIV #selected_tag_info button,
+#normalAPI_DIV #selected_channel_info button,
+#normalAPI_DIV #selected_device_info button,
+#normalAPI_DIV #selected_tag_info button {
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+#IoTGatewayDIV #dropdown_of_channels_for_IoT_Gateway_API,
+#IoTGatewayDIV #dropdown_of_devices_for_IoT_Gateway_API,
+#IoTGatewayDIV #dropdown_of_tags_for_IoT_Gateway_API,
+#normalAPI_DIV #dropdown_of_channels_for_standard_API,
+#normalAPI_DIV #dropdown_of_devices_for_standard_API,
+#normalAPI_DIV #dropdown_of_tags_for_standard_API,
+#normalAPI_DIV #project_data input[type=text] {
+    font-size: 16px;
+    padding: 8px
+}
+
+@media screen and (max-width:600px) {
+    #IoTGatewayDIV,
+    #normalAPI_DIV,
+    #normalAPI_DIV #project_data input[type=text] {
+        width: 100%
+    }
+}
+
+nav {
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: contents;
+    justify-content: flex-start !important;
+    /* Updated */
+    align-items: center;
+    height: 100%;
+    padding: 0 20px
+}
+
+nav.navbar {
+    float: left;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-right: auto !important;
+    /* Added */
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li:first-child {
+    margin-left: 0
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem
+}
+
+.navbar {
+    left: 0;
+    z-index: 999;
+    background: linear-gradient(to top, #00bfff93, #00beff);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+button,
+label {
+    display: block;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#IoTGatewayDIV,
+#normalAPI_DIV {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV button,
+button {
+    margin-top: 20px;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV button:not(:last-child),
+#normalAPI_DIV input:not(:last-child),
+#normalAPI_DIV select:not(:last-child),
+.logo {
+    margin-right: 10px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#read_tags_and_values {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+    font-size: 16px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#read_tags_and_values span {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #333;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#read_tags_and_values p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-size: 13px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#container_of_inputs_and_check {
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#IoTGatewayDIV select,
+#normalAPI_DIV #dropdown_of_tags_for_standard_API {
+    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#read_tags_and_values br {
+    display: none;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#IoTGatewayDIV button,
+#normalAPI_DIV #selected_channel_info,
+#normalAPI_DIV #selected_device_info,
+#normalAPI_DIV #selected_tag_info {
+    margin-top: 10px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV {
+    max-width: 800px;
+    max-height: 100%
+}
+
+#normalAPI_DIV #project_data,
+#normalAPI_DIV label {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV input,
+#normalAPI_DIV select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV button {
+    border: none;
+    border-radius: 5px
+}
+
+#hidemassvalues {
+    font-size: medium;
+    padding: 5px;
+    color: #f2f2f2;
+    border: none;
+    border-radius: .2em
+}
+
+.info-container {
+    position: fixed;
+    bottom: 80px;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+}
+
+#info-button {
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(34, 182, 93);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#info-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    z-index: 9998;
+}
+
+#info-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#info-modal h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#info-modal p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#info-modal-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+#info-modal-close:hover {
+    color: red;
+}
+
+@media screen and (max-width:1200px) {
+    #h1oflogo {
+        font-size: medium;
+        display: block;
+        text-align: center;
+    }
+    #logoDIV {
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 3em;
+        text-shadow: 0 0 3px #22b65d, 0 0 2px #22b65d, 0 0 10px #22b65d, 0 0 7px #22b65d, 0 0 15px #22b65d, 0 0 12px #22b65d;
+        color: #fff;
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+}
+
+#logoDIV {
+    text-shadow: 0 0 3px #22b65d, 0 0 2px #22b65d, 0 0 10px #22b65d, 0 0 7px #22b65d, 0 0 15px #22b65d, 0 0 12px #22b65d;
+    animation-name: textShadow;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textShadow {
+    0% {
+        text-shadow: 0 0 3px #22b65d, 0 0 2px #22b65d, 0 0 10px #22b65d, 0 0 7px #22b65d, 0 0 15px #22b65d, 0 0 12px #22b65d;
+    }
+    25% {
+        text-shadow: 0 0 3px #22b65d, 0 0 5px #22b65d, 0 0 12px #22b65d, 0 0 7px #22b65d, 0 0 15px #22b65d, 0 0 10px #22b65d;
+    }
+    50% {
+        text-shadow: 0 0 2px #22b65d, 0 0 8px #22b65d, 0 0 10px #22b65d, 0 0 5px #22b65d, 0 0 20px #22b65d, 0 0 12px #22b65d;
+    }
+    75% {
+        text-shadow: 0 0 5px #22b65d, 0 0 10px #22b65d, 0 0 8px #22b65d, 0 0 3px #22b65d, 0 0 15px #22b65d, 0 0 12px #22b65d;
+    }
+    100% {
+        text-shadow: 0 0 3px #22b65d, 0 0 2px #22b65d, 0 0 10px #22b65d, 0 0 7px #22b65d, 0 0 15px #22b65d, 0 0 12px #22b65d;
+    }
+}
+
+#notrecomspantxt {
+    color: #2684c4;
+}
+
+#project_data,
+#selected_channel_info,
+#selected_device_info,
+#selected_tag_info {
+    color: white;
+}
+
+#logoimg {
+    filter: drop-shadow(1px 1px 0 rgb(255, 255, 255)) drop-shadow(0 2px 1px rgb(255, 255, 255));
+    transition: transform 2.3s ease-in-out;
+}
+
+#logoimg:hover {
+    transform: scale(1.01);
+}
+
+.loader {
+    display: none;
+    border: 16px solid #16A2D5;
+    border-radius: 50%;
+    border-top: 16px solid #f8f9fa;
+    border-right: 16px solid #22b65d;
+    border-bottom: 16px solid #f8f9fa;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: relative;
+}
+
+.loader div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.9)) drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.9));
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loadingscreenLogo {
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.9)) drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.9));
+    width: 50px;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#seeOtherVersions{
+	margin-top: 0;
+	background-color:rgb(236, 255, 172);
+	color:rgb(0, 0, 0);
+	font-family:arial;
+	font-size:20px;
+	border:2px solid white;
+	 position: fixed;
+    z-index: 9999;
+    width: max-content;
+
+     top: 0px; 
+     right:0;
+    border: 1px;
+    border-radius: 5px;
+     padding: 12px ;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+      z-index: 9999;
+	
+	
+}

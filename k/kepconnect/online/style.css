@@ -1,0 +1,826 @@
+@import url('https://fonts.google.com/specimen/Amiko?query=Amiko#standard-styles');
+#info-button,
+#info-modal-content {
+    box-shadow: 0 0 5px rgb(34, 40, 49, .2)
+}
+
+.logo,
+nav {
+    height: 70px
+}
+
+#info-modal,
+#info-wrapper,
+.navbar {
+    position: fixed;
+    top: 0
+}
+
+#normalAPI_DIV #project_data button[type=submit],
+#read_tags_and_values {
+    margin-bottom: 20px;
+    margin-top: 10px
+}
+
+#info-modal,
+#read_tags_and_values br,
+#unsupported {
+    display: none
+}
+
+#footercredit,
+h1 {
+    text-align: center
+}
+
+.status {
+    padding: 10px;
+    background-color: #A3F7BF
+}
+
+#normalAPI_DIV button,
+.success,
+button {
+    background-color: #29A19C;
+    color: #fff
+}
+
+#info-button,
+#info-modal-content,
+nav {
+    background-color: #A3F7BF
+}
+
+#bodyContainer {
+    font-family: Arial, sans-serif;
+    margin: 5vw 7vw;
+}
+
+h1 {
+    margin: 0
+}
+
+button,
+input[type=text],
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #A3F7BF;
+    border-radius: 5px;
+    width: 100%
+}
+
+#normalAPI_DIV label,
+label {
+    font-size: 20px;
+    font-weight: 700
+}
+
+label {
+    margin: 20px 0 10px
+}
+
+.status,
+button {
+    font-size: 16px
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%
+}
+
+label {
+    color: #A3F7BF;
+}
+
+.status {
+    margin-top: 20px;
+    border: 1px solid #A3F7BF;
+    border-radius: 5px
+}
+
+
+body {
+    background: #222831;
+ 
+    background: linear-gradient(123deg, #222831 40%, #228e8a 60%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    animation: mrhue 15s linear infinite;
+    background-size: 200% 200%;
+    animation-direction: alternate;
+
+
+}
+
+#info-button:hover {
+    background: #ffaa006a;
+ 
+     background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    animation: mrhue 15s linear infinite;
+    background-size: 200% 200%;
+    animation-direction: alternate;
+
+
+}
+
+
+#importDataDIV{
+    display:  flex;
+}
+
+#importerINFO{
+     border: 0;
+    border-radius: 50%;
+   margin-right: 9px;
+   padding:6px;
+   padding-left:10px ;
+   padding-right:10px ;
+   background-color: #ff7700;
+    font-size: 1rem;
+   height: 30px;
+   width: 30px;
+
+}
+
+#hidemassvalues,
+.error {
+    background-color: #29A19C
+}
+
+.error {
+    color: #29A19C
+}
+
+button:disabled {
+    background-color: #393E46;
+    opacity: .7;
+    cursor: not-allowed
+}
+
+#parent {
+    display: flex;
+    justify-content: space-between
+}
+
+#IoTGatewayDIV:not(.connected),
+#normalAPI_DIV:not(.connected) {
+    filter: grayscale(100%) ;
+    pointer-events: none
+}
+
+#IoTGatewayDIV {
+    border: 1px solid #A3F7BF;
+    border-radius: 5px;
+    width: 500px
+}
+
+#normalAPI_DIV {
+    border: 1px solid #A3F7BF;
+    border-radius: 5px;
+    width: 800px
+}
+
+#IoTGatewayDIV #dropdown_of_channels_for_IoT_Gateway_API,
+#IoTGatewayDIV #dropdown_of_devices_for_IoT_Gateway_API,
+#IoTGatewayDIV #dropdown_of_tags_for_IoT_Gateway_API,
+#footercredit,
+#normalAPI_DIV #dropdown_of_channels_for_standard_API,
+#normalAPI_DIV #dropdown_of_devices_for_standard_API,
+#normalAPI_DIV #dropdown_of_tags_for_standard_API,
+.navbar {
+    width: 100%
+}
+
+#normalAPI_DIV button {
+    padding: 10px;
+    font-size: 16px
+}
+
+@media screen and (max-width:768px) {
+    #parent {
+        flex-direction: column
+    }
+    #IoTGatewayDIV,
+    #normalAPI_DIV {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%
+    }
+    #IoTGatewayDIV select,
+    #normalAPI_DIV select {
+        width: 100%
+    }
+}
+
+body {
+    min-height: calc(100vh - 50px);
+    position: relative
+}
+
+#footercredit {
+    bottom: 0;
+    margin-top: 5em;
+    color: #A3F7BF;
+    padding-top: 2em;
+}
+
+#favemerg {
+    width: 50px
+}
+
+#continueButton {
+    background-color: #29A19C
+}
+
+@media only screen and (max-width:1100px) {
+    body :not(#unsupported):not(#favemerg):not(#continueButton):not(#notrecomspantxt) {
+        visibility: hidden;
+    }
+    html {
+        background: #020024;
+        background: linear-gradient(291deg, #222831 0, #29A19C 35%, #29A19C 100%)
+    }
+    #unsupported {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        visibility: visible
+    }
+}
+
+#logoDIV {
+    font-family: 'Amiko', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    text-shadow: 0 0 2px #feffff, 0 0 1px #ffffff, 0 0 5px #ffffff, 0 0 4px #ffffff, 0 0 7px #ffffff, 0 0 6px #c0e5cc;
+    color: #A3F7BF;
+    filter: drop-shadow(2px 2px 3px rgb(34, 40, 49,.3));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-top: 0.1em;
+    
+}
+
+#mainlogodiv{
+    padding-top: 0.1em;
+    filter: drop-shadow(0 0 6px #ffffff);
+    width: 400px;
+
+}#mainlogodiv img{
+    width: 400px;
+
+}
+
+#secondpart {
+    text-shadow: 0 0 2px #29A19C, 0 0 1px #A3F7BF, 0 0 5px #29A19C, 0 0 4px #A3F7BF, 0 0 7px #29A19C, 0 0 6px #393E46;
+}
+
+.logo-text {
+    display: inline-block
+}
+
+.logo-text span:first-child,
+.nav-menu a:hover {
+    color: #040e07
+}
+
+.logo-text span:last-child {
+    color: #29A19C
+}
+
+#IoTGatewayDIV.error,
+#normalAPI_DIV.error {
+     pointer-events: none;
+    position: relative
+}
+
+#IoTGatewayDIV.error::before,
+#normalAPI_DIV.error::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 40, 49,.5);
+    z-index: 1
+}
+
+#IoTGatewayDIV.connected,
+#normalAPI_DIV.connected {
+    filter: none;
+    pointer-events: auto
+}
+
+button:focus,
+input[type=text]:focus,
+select:focus {
+    outline: 0
+}
+
+button:hover {
+    background-color: #6d6d6d
+}
+
+button:hover,
+input[type=text]:hover,
+select:hover {
+    border: 1px solid #555
+}
+
+#normalAPI_DIV #project_data input[type=text] {
+    width: 50%;
+    margin-right: 10px
+}
+
+#IoTGatewayDIV #selected_channel_info,
+#IoTGatewayDIV #selected_device_info,
+#IoTGatewayDIV #selected_tag_info,
+#normalAPI_DIV #selected_channel_info,
+#normalAPI_DIV #selected_device_info,
+#normalAPI_DIV #selected_tag_info {
+    margin-top: 10px
+}
+
+#IoTGatewayDIV #selected_channel_info button,
+#IoTGatewayDIV #selected_device_info button,
+#IoTGatewayDIV #selected_tag_info button,
+#normalAPI_DIV #selected_channel_info button,
+#normalAPI_DIV #selected_device_info button,
+#normalAPI_DIV #selected_tag_info button {
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+#IoTGatewayDIV #dropdown_of_channels_for_IoT_Gateway_API,
+#IoTGatewayDIV #dropdown_of_devices_for_IoT_Gateway_API,
+#IoTGatewayDIV #dropdown_of_tags_for_IoT_Gateway_API,
+#normalAPI_DIV #dropdown_of_channels_for_standard_API,
+#normalAPI_DIV #dropdown_of_devices_for_standard_API,
+#normalAPI_DIV #dropdown_of_tags_for_standard_API,
+#normalAPI_DIV #project_data input[type=text] {
+    font-size: 16px;
+    padding: 8px
+}
+
+@media screen and (max-width:600px) {
+    #IoTGatewayDIV,
+    #normalAPI_DIV,
+    #normalAPI_DIV #project_data input[type=text] {
+        width: 100%
+    }
+}
+
+nav {
+    border-bottom: 1px solid #A3F7BF;
+    box-shadow: 0 2px 4px rgb(34, 40, 49,.1)
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: contents;
+    justify-content: flex-start !important;
+    /* Updated */
+    align-items: center;
+    height: 100%;
+    padding: 0 20px
+}
+
+nav.navbar {
+    float: left;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-right: auto !important;
+    /* Added */
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li:first-child {
+    margin-left: 0
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem
+}
+
+.navbar {
+    left: 0;
+    z-index: 999;
+    background: linear-gradient(to right, #298fa1, #A3F7BF);
+    text-shadow: 2px 2px 4px rgb(34, 40, 49,.5);
+}
+
+.navbar a {
+    color: #fff;
+}
+
+button,
+label {
+    display: block;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#IoTGatewayDIV,
+#normalAPI_DIV {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV button,
+button {
+    margin-top: 20px;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV button:not(:last-child),
+#normalAPI_DIV input:not(:last-child),
+#normalAPI_DIV select:not(:last-child),
+.logo {
+    margin-right: 10px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#read_tags_and_values {
+    padding: 10px;
+    border: 1px solid #A3F7BF;
+    border-radius: 5px;
+    overflow-y: auto;
+    font-size: 16px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #A3F7BF;
+}
+
+#read_tags_and_values span {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: #A3F7BF;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #29A19C;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#read_tags_and_values p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-size: 13px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#container_of_inputs_and_check {
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#IoTGatewayDIV select,
+#normalAPI_DIV #dropdown_of_tags_for_standard_API {
+    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#read_tags_and_values br {
+    display: none;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#IoTGatewayDIV button,
+#normalAPI_DIV #selected_channel_info,
+#normalAPI_DIV #selected_device_info,
+#normalAPI_DIV #selected_tag_info {
+    margin-top: 10px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV {
+    max-width: 800px;
+    max-height: 100%
+}
+
+#normalAPI_DIV #project_data,
+#normalAPI_DIV label {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV input,
+#normalAPI_DIV select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+#normalAPI_DIV button {
+    border: none;
+    border-radius: 5px
+}
+
+#hidemassvalues {
+    font-size: medium;
+    padding: 5px;
+    color: #f2f2f2;
+    border: none;
+    border-radius: .2em
+}
+
+.info-container {
+    position: fixed;
+    bottom: 80px;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+}
+
+#info-button {
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 60px;
+    width: 60px;
+    background-color: #ff7700;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#info-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    z-index: 9998;
+}
+
+#info-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#info-modal h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#info-modal p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#info-modal-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+    color: #f8f9fa;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+#info-modal-close:hover {
+    color: #f8f9fa;
+}
+
+@media screen and (max-width:1200px) {
+  
+    #logoDIV {
+       display: none;
+    }
+
+    #mainlogo{
+        margin-top: 35px;
+    }
+}
+
+#logoDIV {
+   
+    color: #29A19C;
+}
+
+#logoDIV span{
+    color: #ffffff;
+
+}
+ 
+
+#notrecomspantxt {
+    color: #f8f9fa;
+}
+
+#project_data,
+#selected_channel_info,
+#selected_device_info,
+#selected_tag_info {
+    color: white;
+}
+
+#logoimg {
+    width: 10%;
+    height: auto;
+    filter: drop-shadow(0px 1px 0 rgb(255, 255, 255)) drop-shadow(0 0 1px rgb(255, 255, 255));
+    transition: transform 2.3s ease-in-out;
+}
+
+#logoimg:hover {
+    transform: scale(1.01);
+}
+
+ 
+
+@keyframes mrhue {
+    0% {
+        background-position: 0% 50%;
+
+    }
+   
+    100% {
+        background-position: 100% 50%;
+
+
+    }
+}
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loadingscreenLogo {
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.9)) drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.9));
+    width: 250px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: fixed; /* Changed from absolute to fixed */
+    display: flex;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%); /* This will center the element perfectly */
+    z-index: 9999; /* Optional, in case you need to control the stacking order */
+}
+
+
+.loader {
+ 
+    z-index: 9999;
+}
+
+#shown{
+    display: none;
+}
+
+#iotgatewayIPdropDIV * ,#DIVforNormalAPIIP *{
+    display: inline-block !important;
+}
+
+#import-credentiallist{
+    background-color: #29A19C;
+}
+
+#mainlogo, #mainlogodiv{
+    width: 400px !important;
+}
+
+#maindivForprogramOptions{
+text-align: center;
+display: inline-flexbox;
+justify-content: center;
+margin-top: 150px;
+ }
+
+.optbtnforlanding{
+margin: 5em;
+padding: 1em;
+background: linear-gradient(to right, #8c8c8c, #004244);
+background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    animation: mrhue 15s linear infinite;
+    background-size: 200% 200%;
+    animation-direction: alternate;
+color:#b2f7c9;
+filter: drop-shadow(3px 3px rgb(0, 83, 82));
+ text-shadow: 1px 2px rgb(47, 47, 47);
+border: 2px solid rgb(0, 70, 75);
+border-radius: 10px;
+font-weight: bold;
+font-size: large;
+}
+ 
+
+
+#seeOtherVersions{
+	margin-top: 0;
+	background-color:rgb(236, 255, 172);
+	color:rgb(0, 0, 0);
+	font-family:arial;
+	font-size:20px;
+	border:2px solid white;
+	 position: fixed;
+    z-index: 9999;
+    width: max-content;
+
+     top: 0px; 
+     right:0;
+    border: 1px;
+    border-radius: 5px;
+     padding: 12px ;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+      z-index: 9999;
+	
+	
+}
+
+#warnfordownloadable{
+     margin-top: 0;
+	background-color:rgb(236, 255, 172);
+	color:rgb(0, 0, 0);
+	font-family:arial;
+	font-size:20px;
+	border:2px solid white;
+	 position: fixed;
+    z-index: 9999;
+    width: max-content;
+
+     top: 0px; 
+     right:0;
+    border: 1px;
+    border-radius: 5px;
+     padding: 12px ;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+      z-index: 9999;
+}
